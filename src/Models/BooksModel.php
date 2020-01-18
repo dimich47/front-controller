@@ -1,5 +1,5 @@
 <?php
-
+namespace Ifmo\Web\Models;
 
 class BooksModel
 {

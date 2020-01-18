@@ -1,0 +1,13 @@
+{
+    "name": "ifmo/web",
+    "description": "opisanie paketa",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Ifmo\\Web\\": "src/"
+        }
+    }
+}

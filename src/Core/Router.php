@@ -1,4 +1,5 @@
 <?php
+namespace Ifmo\Web\Core;
 //
 //
 //class Router
@@ -66,13 +67,20 @@ class Router
         if (!empty($routes[3])) {
             $params = $routes[3];
         }
-        $controller =
+        $controller = 'Ifmo\Web\Controllers\\'.
             ucfirst(strtolower($controller)) .
             'Controller';
 //        $controller = BooksController
-        require_once __DIR__ .
-            '/../Controllers/' .
-            $controller . '.php';
+
+
+
+//        require_once __DIR__ .
+//            '/../Controllers/' .
+//            $controller . '.php';
+
+
+
+
 //        require_once BooksController.php
         $controller = new $controller();
 //        $controller = new BooksController();

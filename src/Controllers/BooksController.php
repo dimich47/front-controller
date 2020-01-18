@@ -1,5 +1,7 @@
 <?php
-
+namespace Ifmo\Web\Controllers;
+use  Ifmo\Web\Core\Controller;
+use  Ifmo\Web\Models\BooksModel;
 
 class BooksController extends Controller
 {
