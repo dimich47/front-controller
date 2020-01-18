@@ -6,12 +6,14 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$server = $_SERVER;
-$url = $server['REQUEST_URI'];
+//$server = $_SERVER;
+//$url = $server['REQUEST_URI'];
 
 // "/"
 //if($url == '/'){
 //    $controller = new IndexController(); // создали объект
 //    $controller->indexAction(); // вызвали метод объекта
 //}
-Ifmo\Web\Core\Router::run();
+//Ifmo\Web\Core\Router::run();
+$config = __CLASS__ . '/../config.json';
+$config = json_decode(file_get_contents($config), true);
